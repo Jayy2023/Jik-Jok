@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react';
 import VideoFooter from './VideoFooter';
+import VideoSidebar from './VideoSidebar';
 import './Video.css'
 
 export default function Video() {
@@ -26,7 +27,11 @@ export default function Video() {
        onClick={onVideoPress}
        ref={videoRef}
        ></video>
-       <VideoFooter/>
+       <VideoFooter 
+       channel="DadWhoCodes" 
+       description="Russell Westbrook Revenge Game 🤯"
+       />
+       <VideoSidebar  likes={554} messages={333} shares={444}/>
         
 
     </div>
